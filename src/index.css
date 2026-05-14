@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", sans-serif;
+
+  /* Custom Palette from High Density Spec */
+  --color-primary: #0049c6;
+  --color-secondary: #535d81;
+  --color-tertiary: #a40065;
+  --color-error: #ba1a1a;
+  --color-bg: #f7f9fb;
+  --color-surface: #ffffff;
+  --color-line: #e0e3e5;
+  --color-text: #191c1e;
+  --color-text-sub: #434654;
+
+  --color-on-primary: #ffffff;
+  --color-primary-container: #2962e7;
+  --color-on-primary-container: #ecedff;
+  --color-primary-fixed: #dbe1ff;
+  --color-on-primary-fixed: #00174c;
+  
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #c9d3fd;
+  --color-on-secondary-container: #505a7e;
+  
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #d00082;
+  --color-on-tertiary-container: #ffe9ef;
+  --color-tertiary-fixed: #ffd9e5;
+  --color-on-tertiary-fixed: #3d0023;
+
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-on-surface: #191c1e;
+  --color-surface-variant: #e0e3e5;
+  --color-on-surface-variant: #434654;
+  --color-outline: #737686;
+  --color-outline-variant: #c3c6d7;
+
+  --color-surface-container-highest: #e0e3e5;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container: #eceef0;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-bright: #f7f9fb;
+  --color-surface-dim: #d8dadc;
+
+  --spacing-gutter: 24px;
+  --spacing-margin-desktop: 40px;
+  --spacing-margin-mobile: 16px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: 16px;
+  --spacing-stack-lg: 32px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-sans antialiased;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.ai-insight-border {
+  border: 1px solid rgba(164, 0, 101, 0.2);
+  box-shadow: 0 0 12px rgba(164, 0, 101, 0.05);
+}
+
+.ai-glow {
+  box-shadow: 0 0 20px rgba(164, 0, 101, 0.1);
+}
+
+.whatsapp-background {
+  background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+  background-repeat: repeat;
+  background-color: #e5ddd5;
+}
